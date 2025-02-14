@@ -1,0 +1,26 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <include>./../theme.xml</include>
+  <variables>
+    <systemBackgroundColor>37BD6E</systemBackgroundColor>
+  </variables>
+
+  <view name="basic, detailed, video, grid">
+    <text name="nameLabel" extra="true">
+      <text>Atomiswave</text>
+    </text>
+  </view>
+
+  <view name="system">
+    <text name="sys_line1" extra="true">
+      <text>Atomiswave</text>
+
+    </text>
+    <text name="shortdescription" extra="true">
+      <text>2003 | 32-bit Board</text>
+    </text>
+    <text name="longdescription" extra="true">
+      <text>Custom arcade system board and cabinet from Sammy Corporation. It is based on Sega's Dreamcast system board</text>
+    </text>
+  </view>
+</theme>

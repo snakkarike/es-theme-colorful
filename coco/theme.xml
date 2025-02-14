@@ -1,0 +1,26 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <include>./../theme.xml</include>
+  <variables>
+    <systemBackgroundColor>D1AA41</systemBackgroundColor>
+  </variables>
+
+  <view name="basic, detailed, video, grid">
+    <text name="nameLabel" extra="true">
+      <text>COCO TRS-80</text>
+    </text>
+  </view>
+
+  <view name="system">
+    <text name="sys_line1" extra="true">
+      <text>COCO TRS-80</text>
+
+    </text>
+    <text name="shortdescription" extra="true">
+      <text>1977 | 8-bit Computer</text>
+    </text>
+    <text name="longdescription" extra="true">
+      <text>Sold by Tandy through their RadioShack stores. It is one of the earliest mass-produced home computer.</text>
+    </text>
+  </view>
+</theme>

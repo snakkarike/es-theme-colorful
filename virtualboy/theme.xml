@@ -1,0 +1,26 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <include>./../theme.xml</include>
+  <variables>
+    <systemBackgroundColor>4D98D8</systemBackgroundColor>
+  </variables>
+
+  <view name="basic, detailed, video, grid">
+    <text name="nameLabel" extra="true">
+      <text>Nintendo VirtualBoy</text>
+    </text>
+  </view>
+
+  <view name="system">
+    <text name="sys_line1" extra="true">
+      <text>VirtualBoy</text>
+
+    </text>
+    <text name="shortdescription" extra="true">
+      <text>1995 | 32-bit Table-top Console</text>
+    </text>
+    <text name="longdescription" extra="true">
+      <text>It was marketed as the first console capable of displaying stereoscopic 3D graphics using a parallax effect to create the illusion of depth</text>
+    </text>
+  </view>
+</theme>

@@ -1,0 +1,439 @@
+<!--
+Theme name:  Colorful
+Artwork by:  Gradelabs
+Coding by:   Gradelabs
+
+
+# Thanks and Credits
+Credits to Epic Noir and Epic Cody for Base Theme
+Some controllers and graphics used in this theme are created by great artists who kindly agreed to
+include their art within the theme.
+
+# License
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+International License. Please see README.md for full details.
+-->
+
+<theme>
+    <formatVersion>7</formatVersion>
+    <variables>
+        <helpIconColor>ffffff99</helpIconColor>
+        <helpTextColor>ffffff99</helpTextColor>
+        <helpBackgroundColor>00000022</helpBackgroundColor>
+        <systemLabelColor>ffffffaa</systemLabelColor>
+        <systemNameColor>ffffff</systemNameColor>
+        <systemDescriptionColor>ffffff</systemDescriptionColor>
+        <systemGameCountColor>ffffff99</systemGameCountColor>
+        <gamelistSelectorColor>00000033</gamelistSelectorColor>
+        <gamelistPrimaryColor>ffffff66</gamelistPrimaryColor>
+        <gamelistSecondaryColor>ffffff66</gamelistSecondaryColor>
+        <gamelistSelectedColor>ffffff</gamelistSelectedColor>
+        <gameDescription>ffffff</gameDescription>
+        <gameMetadataLabel>ffffffaa</gameMetadataLabel>
+        <gameMetadata>ffffff</gameMetadata>
+        <gameMetadataBackground>./_inc/images/metadata-background-dark.svg</gameMetadataBackground>
+        <batteryIndicatorColor>ffffff99</batteryIndicatorColor>
+    </variables>
+
+    <subset name="font-size" displayName="Font Size">
+        <include name="medium" displayName="Medium" />
+        <include name="large" displayName="Large" />
+    </subset>
+
+    <variables>
+        <spacerImage>./_art/assets/space.png</spacerImage>
+        <fontLight>./_art/Gilroy-Light.ttf</fontLight>
+        <fontRegular>./_art/Gilroy-Regular.ttf</fontRegular>
+        <fontSemiBold>${fontSemiBold}</fontSemiBold>
+        <fontBold>./_art/Gilroy-Bold.ttf</fontBold>
+        <fontHelpSystem>./_art/Akrobat-Bold.ttf</fontHelpSystem>
+        <menuFontBold>./_art/Oxygen-Bold.ttf</menuFontBold>
+        <menuFontLight>./_art/Oxygen-Light.ttf</menuFontLight>
+        <menuFontRegular>./_art/Oxygen-Regular.ttf</menuFontRegular>
+    </variables>
+
+    <view name="system">
+
+        <image name="background" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>${spacerImage}</path>
+            <tile>true</tile>
+            <color>${systemBackgroundColor}</color>
+            <zIndex>0</zIndex>
+        </image>
+
+        <image name="backgroundhelp" extra="true">
+            <origin>0 1</origin>
+            <pos>0 1</pos>
+            <size>1 0.075</size>
+            <path>${spacerImage}</path>
+            <tile>true</tile>
+            <color>${helpBackgroundColor}</color>
+            <zIndex>0</zIndex>
+        </image>
+
+        <helpsystem name="help">
+            <textColor>${helpTextColor}</textColor>
+            <iconColor>${helpIconColor}</iconColor>
+            <fontPath>${menuFontBold}</fontPath>
+            <fontSize>0.0225</fontSize>
+            <pos>0.025 0.975</pos>
+            <origin>0 1</origin>
+            <iconUpDown>./_art/assets/help-dpad-updown.svg</iconUpDown>
+            <iconLeftRight>./_art/assets/help-dpad-leftright.svg</iconLeftRight>
+            <iconUpDownLeftRight>./_art/assets/help-dpad-updownleftright.svg</iconUpDownLeftRight>
+            <iconA>./_art/assets/help-button-east.svg</iconA>
+            <iconB>./_art/assets/help-button-south.svg</iconB>
+            <iconX>./_art/assets/help-button-north.svg</iconX>
+            <iconY>./_art/assets/help-button-west.svg</iconY>
+        </helpsystem>
+
+        <sound name="bgsound">
+            <!-- try mp3 -->
+            <path>./_art/assets/sounds/${system.theme}.mp3</path>
+            <!-- try ogg -->
+            <path>./_art/assets/sounds/${system.theme}.ogg</path>
+
+        </sound>
+
+        <image name="poster" extra="true">
+            <path>./_art/systems/${system.theme}.webp</path>
+            <tile>false</tile>
+            <origin>1 0</origin>
+            <pos>1 0.125</pos>
+            <size>0 0.75</size>
+        </image>
+
+        <carousel name="systemcarousel">
+            <type>vertical</type>
+            <color>00000000</color>
+            <origin>1 1</origin>
+            <pos>1 1</pos>
+            <size>0.01 0.01</size>
+            <logoScale>1</logoScale>
+            <logoSize>0.01 0.01</logoSize>
+            <maxLogoCount>0</maxLogoCount>
+        </carousel>
+
+        <text name="sys_line1" extra="true">
+            <fontPath>${fontBold}</fontPath>
+            <alignment>left</alignment>
+            <forceUppercase>0</forceUppercase>
+            <fontSize>0.05</fontSize>
+            <origin>0 0</origin>
+            <pos>0.025 0.125</pos>
+            <size>0 0</size>
+            <color>${systemNameColor}</color>
+        </text>
+
+        <text name="shortdescription" extra="true">
+            <fontPath>${fontBold}</fontPath>
+            <alignment>left</alignment>
+            <forceUppercase>0</forceUppercase>
+            <fontSize>0.025</fontSize>
+            <color>${systemLabelColor}</color>
+            <origin>0 0</origin>
+            <pos>0.025 0.1</pos>
+            <size>0.5 0.025</size>
+        </text>
+
+        <text name="systemInfo">
+            <fontPath>${fontBold}</fontPath>
+            <alignment>left</alignment>
+            <backgroundColor>00000000</backgroundColor>
+            <forceUppercase>1</forceUppercase>
+            <color>${systemGameCountColor}</color>
+            <origin>0 0</origin>
+            <pos>0.025 0.220</pos>
+            <size>0.400 0.045</size>
+            <fontSize>0.04</fontSize>
+        </text>
+
+        <text name="longdescription" extra="true">
+            <fontPath>${fontRegular}</fontPath>
+            <alignment>left</alignment>
+            <forceUppercase>0</forceUppercase>
+            <fontSize>0.03</fontSize>
+            <color>${systemDescriptionColor}</color>
+            <lineSpacing>1.18</lineSpacing>
+            <origin>0 0</origin>
+            <pos>0.025 0.7</pos>
+            <size>0.5 0.5</size>
+            <container>true</container>
+            <verticalAlignment>top</verticalAlignment>
+            <zIndex>5</zIndex>
+            <autoScroll>vertical</autoScroll>
+        </text>
+
+    </view>
+
+    <view name="basic, detailed, video">
+
+        <image name="background" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>${spacerImage}</path>
+            <tile>true</tile>
+            <color>${systemBackgroundColor}</color>
+            <zIndex>0</zIndex>
+        </image>
+        <image name="backgroundhelp" extra="true">
+            <origin>0 1</origin>
+            <pos>0 1</pos>
+            <size>1 0.075</size>
+            <path>${spacerImage}</path>
+            <tile>true</tile>
+            <color>${helpBackgroundColor}</color>
+            <zIndex>0</zIndex>
+        </image>
+
+        <textlist name="gamelist">
+            <selectorColor>${gamelistSelectorColor}</selectorColor>
+            <selectedColor>${gamelistSelectedColor}</selectedColor>
+            <selectorHeight>0.06</selectorHeight>
+            <primaryColor>${gamelistPrimaryColor}</primaryColor>
+            <secondaryColor>${gamelistSecondaryColor}</secondaryColor>
+            <fontPath>${fontSemiBold}</fontPath>
+            <alignment>left</alignment>
+            <pos>0.025 0.2</pos>
+            <size>0.319 0.75</size>
+            <fontSize>0.03</fontSize>
+            <lineSpacing>1.683</lineSpacing>
+            <horizontalMargin>0.01</horizontalMargin>
+        </textlist>
+
+        <helpsystem name="help">
+            <textColor>${helpTextColor}</textColor>
+            <iconColor>${helpIconColor}</iconColor>
+            <fontPath>${menuFontBold}</fontPath>
+            <fontSize>0.0225</fontSize>
+            <pos>0.025 0.975</pos>
+            <origin>0 1</origin>
+            <iconUpDown>./_art/assets/help-dpad-updown.svg</iconUpDown>
+            <iconLeftRight>./_art/assets/help-dpad-leftright.svg</iconLeftRight>
+            <iconUpDownLeftRight>./_art/assets/help-dpad-updownleftright.svg</iconUpDownLeftRight>
+            <iconA>./_art/assets/help-button-east.svg</iconA>
+            <iconB>./_art/assets/help-button-south.svg</iconB>
+            <iconX>./_art/assets/help-button-north.svg</iconX>
+            <iconY>./_art/assets/help-button-west.svg</iconY>
+        </helpsystem>
+        <!-- Console Name -->
+
+
+        <text name="nameLabel" extra="true">
+            <fontPath>${fontBold}</fontPath>
+            <forceUppercase>1</forceUppercase>
+            <color>${gameMetadataLabel}</color>
+            <fontSize>0.04</fontSize>
+            <alignment>left</alignment>
+            <pos>0.025 0.1</pos>
+            <size>0.33 0.08</size>
+            <zIndex>32</zIndex>
+        </text>
+
+        <text name="md_description">
+            <fontPath>${fontBold}</fontPath>
+            <color>${gameDescription}</color>
+            <fontSize>0.03</fontSize>
+            <alignment>left</alignment>
+            <forceUppercase>0</forceUppercase>
+            <lineSpacing>1.18</lineSpacing>
+            <origin>0 0</origin>
+            <pos>0.4 0.65</pos>
+            <size>0.55 0.185</size>
+            <container>true</container>
+            <verticalAlignment>top</verticalAlignment>
+            <zIndex>5</zIndex>
+            <autoScroll>vertical</autoScroll>
+        </text>
+
+        <!-- Define metadata -->
+
+        <!-- Place metadata -->
+
+        <!-- Extra Text Labels. Edit text values if needed.-->
+
+        <text name="txt_descript" extra="true">
+            <text></text>
+            <fontPath>${fontBold}</fontPath>
+            <alignment>left</alignment>
+            <fontSize>0.025</fontSize>
+            <color>${gameMetadata}</color>
+            <origin>0 0</origin>
+            <pos>0.339 0.630</pos>
+            <size>0.06 0.2</size>
+        </text>
+
+        <!-- Hidden Elements -->
+
+        <text name="shortdescription, longdescription" extra="true">
+            <origin>1 1</origin>
+            <pos>0 0</pos>
+            <color>${gameMetadata}</color>
+        </text>
+
+        <text name="md_lbl_releasedate, md_lbl_developer, md_developer, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_publisher, md_publsher">
+            <origin>1 1</origin>
+            <color>${gameMetadata}</color>
+            <pos>0 0</pos>
+        </text>
+
+        <datetime name="md_releasedate, md_lastplayed">
+            <origin>1 1</origin>
+            <color>${gameMetadata}</color>
+            <pos>0 0</pos>
+        </datetime>
+
+    </view>
+
+    <view name="basic, detailed">
+        <image name="md_image">
+            <tile>false</tile>
+            <origin>0 0</origin>
+            <pos>0.4 0.125</pos>
+            <maxSize>0.55 0.5</maxSize>
+            <zIndex>32</zIndex>
+        </image>
+        <image name="md_marquee">
+            <origin>0 0</origin>
+            <pos>0.75 0.095</pos>
+            <maxSize>0.2 0.2</maxSize>
+            <zIndex>32</zIndex>
+        </image>
+        <text name="logoText">
+            <color>00000000</color>
+        </text>
+
+    </view>
+
+    <feature supported="video">
+        <view name="video">
+            <image name="tvoverlay" extra="true">
+                <tile>false</tile>
+                <path>${spacerImage}</path>
+                <size>1 1</size>
+                <pos>1 1</pos>
+                <zIndex>31</zIndex>
+            </image>
+            <image name="md_marquee">
+                <origin>0 0</origin>
+                <pos>0.75 0.095</pos>
+                <maxSize>0.2 0.2</maxSize>
+                <zIndex>32</zIndex>
+            </image>
+            <rating name="md_rating">
+                <origin>0 0</origin>
+                <pos>0.4 0.85</pos>
+                <size>0.05 0.05</size>
+                <zIndex>33</zIndex>
+                <filledPath>./_art/assets/icon-star-filled.svg</filledPath>
+                <unfilledPath>./_art/assets/iocn-star-unfilled.svg</unfilledPath>
+                <color>${gameMetadata}</color>
+            </rating>
+            <video name="md_video">
+                <origin>0 0</origin>
+                <pos>0.4 0.125</pos>
+                <maxSize>0.55 0.5</maxSize>
+                <delay>1.4</delay>
+                <showSnapshotNoVideo>true</showSnapshotNoVideo>
+                <showSnapshotDelay>true</showSnapshotDelay>
+            </video>
+            <text name="logoText">
+                <color>00000000</color>
+            </text>
+        </view>
+    </feature>
+
+    <view name="screen">
+        <text name="clock">
+            <color>${batteryIndicatorColor}</color>
+            <fontSize>0.035</fontSize>
+            <fontPath>${menuFontBold}</fontPath>
+            <pos>0.025 0.01</pos>
+            <size>0.5 0.058</size>
+            <alignment>left</alignment>
+            <verticalAlignment>center</verticalAlignment>
+        </text>
+        <batteryIndicator name="batteryIndicator">
+            <pos>0.825 0.001</pos>
+            <size>0.02 0.02</size>
+            <incharge>./art/battery/incharge.svg</incharge>
+            <full>./art/battery/full.svg</full>
+            <at75>./art/battery/75.svg</at75>
+            <at50>./art/battery/50.svg</at50>
+            <at25>./art/battery/25.svg</at25>
+            <empty>./art/battery/empty.svg</empty>
+            <color>${batteryIndicatorColor}</color>
+            <fontPath>${menuFontBold}</fontPath>
+        </batteryIndicator>
+
+
+        <!-- Battery Indicator Icon x,y -->
+        <batteryIndicator name="batteryIndicator" tinyScreen="true">
+            <pos>0.9 0.002</pos>
+            <size>0.06 0.06</size>
+        </batteryIndicator>
+    </view>
+
+    <view name="menu">
+        <menuText name="menutitle">
+            <fontPath>${menuFontBold}</fontPath>
+            <fontSize>0.038</fontSize>
+            <color>ffffff</color>
+        </menuText>
+        <menuText name="menufooter">
+            <fontPath>${menuFontLight}</fontPath>
+            <fontSize>0.028</fontSize>
+            <color>ffffff77</color>
+        </menuText>
+        <menuText name="menutext">
+            <fontPath>${menuFontBold}</fontPath>
+            <fontSize>0.038</fontSize>
+            <color>ffffff77</color>
+            <separatorColor>ffffff11</separatorColor>
+            <selectedColor>ffffff</selectedColor>
+        </menuText>
+        <menuTextSmall name="menutextsmall">
+            <fontPath>${menuFontBold}</fontPath>
+            <fontSize>0.028</fontSize>
+            <color>ffffff77</color>
+        </menuTextSmall>
+        <menuGroup name="menugroup">
+            <fontPath>${menuFontRegular}</fontPath>
+            <fontSize>0.0325</fontSize>
+            <color>ffffff</color>
+            <separatorColor>ffffff99</separatorColor>
+            <backgroundColor>00000000</backgroundColor>
+            <lineSpacing>2.5</lineSpacing>
+        </menuGroup>
+        <menuBackground name="menubg">
+            <color>111111</color>
+            <cornerSize>20 20</cornerSize>
+        </menuBackground>
+        <menuIcons name="menuicons">
+            <iconSystem>./_art/assets/menu-icon-system.svg</iconSystem>
+            <iconUpdates>./_art/assets/menu-icon-update.svg</iconUpdates>
+            <iconBrightnessctl>./_art/assets/menu-icon-display.svg</iconBrightnessctl>
+            <iconControllers>./_art/assets/menu-icon-controller.svg</iconControllers>
+            <iconGames>./_art/assets/menu-icon-games.svg</iconGames>
+            <iconUI>./_art/assets/menu-icon-ui.svg</iconUI>
+            <iconSound>./_art/assets/menu-icon-sound.svg</iconSound>
+            <iconNetwork>./_art/assets/menu-icon-network.svg</iconNetwork>
+            <iconScraper>./_art/assets/menu-icon-scraper.svg</iconScraper>
+            <iconAdvanced>./_art/assets/menu-icon-advanced.svg</iconAdvanced>
+            <iconQuit>./_art/assets/menu-icon-quit.svg</iconQuit>
+            <iconRetroachievements>./_art/assets/menu-icon-achievements.svg</iconRetroachievements>
+            <iconKodi>./_art/assets/menu-icon-kodi.svg</iconKodi>
+            <iconRestart>./_art/assets/menu-icon-restart.svg</iconRestart>
+            <iconShutdown>./_art/assets/menu-icon-shutdown.svg</iconShutdown>
+            <iconFastShutdown>./_art/assets/menu-icon-shutdown.svg</iconFastShutdown>
+        </menuIcons>
+        <menuTextEdit name="menutextedit">
+            <inactive>./_art/assets/menu-textinput.png</inactive>
+            <active>./_art/assets/menu-textinput-active.png</active>
+        </menuTextEdit>
+    </view>
+</theme>

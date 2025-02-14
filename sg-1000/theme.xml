@@ -1,0 +1,26 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <include>./../theme.xml</include>
+  <variables>
+    <systemBackgroundColor>48589F</systemBackgroundColor>
+  </variables>
+
+  <view name="basic, detailed, video, grid">
+    <text name="nameLabel" extra="true">
+      <text>Sega SG-1000</text>
+    </text>
+  </view>
+
+  <view name="system">
+    <text name="sys_line1" extra="true">
+      <text>Sega SG-1000</text>
+
+    </text>
+    <text name="shortdescription" extra="true">
+      <text>1983 | 8-bit Console</text>
+    </text>
+    <text name="longdescription" extra="true">
+      <text>Sega's first entry into the home video game hardware business provided the basis for the more successful Master System.</text>
+    </text>
+  </view>
+</theme>

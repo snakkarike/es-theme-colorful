@@ -1,0 +1,26 @@
+<theme>
+  <formatVersion>7</formatVersion>
+  <include>./../theme.xml</include>
+  <variables>
+    <systemBackgroundColor>ECD04C</systemBackgroundColor>
+  </variables>
+
+  <view name="basic, detailed, video, grid">
+    <text name="nameLabel" extra="true">
+      <text>CAPCOM SYSTEM II</text>
+    </text>
+  </view>
+
+  <view name="system">
+    <text name="sys_line1" extra="true">
+      <text>CAPCOM SYSTEM II</text>
+
+    </text>
+    <text name="shortdescription" extra="true">
+      <text>1993 | Arcade Board</text>
+    </text>
+    <text name="longdescription" extra="true">
+      <text>Arcade board that Capcom first used for Super Street Fighter II. It was the successor to their previous CPS.</text>
+    </text>
+  </view>
+</theme>

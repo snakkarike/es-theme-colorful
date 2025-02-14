@@ -1,0 +1,26 @@
+<theme>
+<formatVersion>7</formatVersion>
+<include>./../theme.xml</include>
+  <variables>
+<systemBackgroundColor>315E98</systemBackgroundColor>
+  </variables>
+
+<view name="basic, detailed, video, grid">
+    <text name="nameLabel" extra="true">
+    <text>Commodore 128</text>
+  </text>
+</view>    
+
+<view name="system">
+  <text name="sys_line1" extra="true">
+    <text>Commodore 128</text>
+
+  </text>    
+  <text name="shortdescription" extra="true">
+   <text>1982  |  8-bit Computer</text>
+  </text>
+  <text name="longdescription" extra="true">
+   <text>The C128 is the last 8-bit home computer that was commercially released by Commodore Business Machines .</text>
+  </text>
+ </view>
+</theme>
