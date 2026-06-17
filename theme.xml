@@ -358,8 +358,9 @@ International License. Please see README.md for full details.
             <verticalAlignment>center</verticalAlignment>
         </text>
         <batteryIndicator name="batteryIndicator">
-            <pos>0.825 0.001</pos>
-            <size>0.02 0.02</size>
+            <!-- Moved left and given explicit width so the percentage text does not overflow -->
+            <pos>0.76 0.001</pos>
+            <size>0.055 0.055</size>
             <incharge>./art/battery/incharge.svg</incharge>
             <full>./art/battery/full.svg</full>
             <at75>./art/battery/75.svg</at75>
@@ -368,13 +369,15 @@ International License. Please see README.md for full details.
             <empty>./art/battery/empty.svg</empty>
             <color>${batteryIndicatorColor}</color>
             <fontPath>${menuFontBold}</fontPath>
+            <fontSize>0.028</fontSize>
         </batteryIndicator>
 
-
-        <!-- Battery Indicator Icon x,y -->
+        <!-- Battery Indicator Icon x,y — tinyScreen override -->
         <batteryIndicator name="batteryIndicator" tinyScreen="true">
-            <pos>0.9 0.002</pos>
-            <size>0.06 0.06</size>
+            <!-- Pulled further left so the text label stays within the 640px screen -->
+            <pos>0.76 0.002</pos>
+            <size>0.055 0.055</size>
+            <fontSize>0.028</fontSize>
         </batteryIndicator>
     </view>
 
