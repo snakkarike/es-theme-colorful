@@ -52,11 +52,37 @@ This fork adapts the upstream theme specifically for the RG353V's 640×480 scree
 
 ---
 
-## Color Schemes
+## Configuration Options
 
-The theme uses a per-system accent colour automatically. There is no manual color scheme switcher in this fork.
+All options are available in EmulationStation under **Main Menu → UI Settings**.
 
-Each system folder (`nes/`, `snes/`, `gba/`, etc.) defines its own `systemBackgroundColor` to match the Colorful art set.
+---
+
+### Theme Variant
+
+Controls the gamelist layout. Select the one that matches the media you have scraped.
+
+| Variant | What it shows |
+|---|---|
+| `List: Boxart` | Box art image in the detail panel |
+| `List: Screenshot` | Screenshot in the detail panel |
+| `List: Screenshot + Marquee` | Screenshot with a marquee logo overlaid |
+| `List: Metadata & Screenshot` | Smaller image alongside game description |
+
+---
+
+### Theme Color Scheme
+
+Overrides the per-system accent colour with a fixed palette across all systems.
+
+| Scheme | Style |
+|---|---|
+| `Colorful` *(default)* | Per-system accent colour from the Colorful art set |
+| `Dark` | Dark grey background, white text |
+| `OLED` | Pure black background, ideal for OLED-like screens |
+| `Light` | Light grey background, dark text |
+| `RetroBright` | Warm grey tones inspired by classic hardware |
+| `DMG` | Muted Game Boy palette |
 
 ---
 

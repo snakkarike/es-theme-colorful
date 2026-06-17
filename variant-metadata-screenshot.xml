@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Variant: List with Metadata + Screenshot + Boxart -->
+<!-- Compact layout: smaller image, metadata panel visible -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="basic, detailed, video">
+    <image name="md_image">
+      <origin>0 0</origin>
+      <pos>0.345 0.125</pos>
+      <maxSize>0.35 0.38</maxSize>
+      <zIndex>32</zIndex>
+    </image>
+    <image name="md_marquee">
+      <origin>1 0</origin>
+      <pos>1 1</pos>
+      <maxSize>0.01 0.01</maxSize>
+    </image>
+    <text name="md_description">
+      <pos>0.345 0.54</pos>
+      <size>0.625 0.22</size>
+    </text>
+  </view>
+</theme>

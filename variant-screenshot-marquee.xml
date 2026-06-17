@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Variant: List with Screenshot + Marquee overlay -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="basic, detailed, video">
+    <image name="md_image">
+      <origin>0 0</origin>
+      <pos>0.4 0.125</pos>
+      <maxSize>0.55 0.5</maxSize>
+      <zIndex>32</zIndex>
+    </image>
+    <!-- Marquee overlaid top-right of the screenshot area -->
+    <image name="md_marquee">
+      <origin>1 0</origin>
+      <pos>0.95 0.13</pos>
+      <maxSize>0.18 0.14</maxSize>
+      <zIndex>34</zIndex>
+    </image>
+  </view>
+</theme>

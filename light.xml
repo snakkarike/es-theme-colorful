@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <systemBackgroundColor>dddddd</systemBackgroundColor>
+    <helpIconColor>555555</helpIconColor>
+    <helpTextColor>555555</helpTextColor>
+    <helpBackgroundColor>ffffff66</helpBackgroundColor>
+    <systemLabelColor>777777</systemLabelColor>
+    <systemNameColor>000000</systemNameColor>
+    <systemDescriptionColor>000000</systemDescriptionColor>
+    <systemGameCountColor>00000099</systemGameCountColor>
+    <gamelistSelectorColor>ffffffdd</gamelistSelectorColor>
+    <gamelistPrimaryColor>888888</gamelistPrimaryColor>
+    <gamelistSecondaryColor>888888</gamelistSecondaryColor>
+    <gamelistSelectedColor>000000</gamelistSelectedColor>
+    <gameDescription>000000</gameDescription>
+    <gameMetadataLabel>777777</gameMetadataLabel>
+    <gameMetadata>333333</gameMetadata>
+    <gameMetadataBackground>./_art/assets/metadata-background-light.svg</gameMetadataBackground>
+    <batteryIndicatorColor>00000099</batteryIndicatorColor>
+  </variables>
+</theme>

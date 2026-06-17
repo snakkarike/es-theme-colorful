@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Variant: List with Boxart -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="basic, detailed, video">
+    <image name="md_image">
+      <origin>0 0</origin>
+      <pos>0.4 0.125</pos>
+      <maxSize>0.55 0.5</maxSize>
+      <zIndex>32</zIndex>
+    </image>
+    <image name="md_marquee">
+      <origin>1 0</origin>
+      <pos>1 1</pos>
+      <maxSize>0.01 0.01</maxSize>
+    </image>
+  </view>
+</theme>

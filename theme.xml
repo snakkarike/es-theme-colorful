@@ -36,6 +36,44 @@ International License. Please see README.md for full details.
         <batteryIndicatorColor>ffffff99</batteryIndicatorColor>
     </variables>
 
+    <!-- ═══════════════════════════════════════════════════════
+         COLOR SCHEME SUBSET
+         Selectable via Main Menu → UI Settings → Theme Color Scheme
+         ═══════════════════════════════════════════════════════ -->
+    <subset name="color-scheme" displayName="Theme Color Scheme">
+        <!-- Default: per-system accent colours from each system folder -->
+        <include name="colorful"      displayName="Colorful" />
+        <include name="dark"          displayName="Dark" />
+        <include name="oled"          displayName="OLED" />
+        <include name="light"         displayName="Light" />
+        <include name="retro-bright"  displayName="RetroBright" />
+        <include name="dmg"           displayName="DMG" />
+    </subset>
+
+    <!-- Color scheme includes — loaded when user selects a scheme -->
+    <include ifsubset="color-scheme:dark">./dark.xml</include>
+    <include ifsubset="color-scheme:oled">./oled.xml</include>
+    <include ifsubset="color-scheme:light">./light.xml</include>
+    <include ifsubset="color-scheme:retro-bright">./retro-bright.xml</include>
+    <include ifsubset="color-scheme:dmg">./dmg.xml</include>
+
+    <!-- ═══════════════════════════════════════════════════════
+         VARIANT SUBSET
+         Selectable via Main Menu → UI Settings → Theme Variant
+         ═══════════════════════════════════════════════════════ -->
+    <subset name="variant" displayName="Theme Variant">
+        <include name="list-boxart"              displayName="List: Boxart" />
+        <include name="list-screenshot"          displayName="List: Screenshot" />
+        <include name="list-screenshot-marquee"  displayName="List: Screenshot + Marquee" />
+        <include name="list-metadata-screenshot" displayName="List: Metadata &amp; Screenshot" />
+    </subset>
+
+    <!-- Variant includes — loaded when user selects a layout -->
+    <include ifsubset="variant:list-boxart">./variant-boxart.xml</include>
+    <include ifsubset="variant:list-screenshot">./variant-screenshot.xml</include>
+    <include ifsubset="variant:list-screenshot-marquee">./variant-screenshot-marquee.xml</include>
+    <include ifsubset="variant:list-metadata-screenshot">./variant-metadata-screenshot.xml</include>
+
     <variables>
         <spacerImage>./_art/assets/space.png</spacerImage>
         <fontLight>./_art/Gilroy-Light.ttf</fontLight>
