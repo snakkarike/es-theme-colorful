@@ -276,7 +276,8 @@ International License. Please see README.md for full details.
             <color>${gameMetadata}</color>
         </text>
 
-        <text name="md_lbl_releasedate, md_lbl_developer, md_developer, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_publisher, md_publsher">
+        <text
+            name="md_lbl_releasedate, md_lbl_developer, md_developer, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_publisher, md_publsher">
             <origin>1 1</origin>
             <color>${gameMetadata}</color>
             <pos>0 0</pos>
@@ -422,6 +423,7 @@ International License. Please see README.md for full details.
             <iconSound>./_art/assets/menu-icon-sound.svg</iconSound>
             <iconNetwork>./_art/assets/menu-icon-network.svg</iconNetwork>
             <iconScraper>./_art/assets/menu-icon-scraper.svg</iconScraper>
+            <iconOptions>./_art/assets/menu-icon-advanced.svg</iconOptions>
             <iconAdvanced>./_art/assets/menu-icon-advanced.svg</iconAdvanced>
             <iconQuit>./_art/assets/menu-icon-quit.svg</iconQuit>
             <iconRetroachievements>./_art/assets/menu-icon-achievements.svg</iconRetroachievements>
