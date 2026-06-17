@@ -17,7 +17,6 @@ International License. Please see README.md for full details.
 <theme>
     <formatVersion>7</formatVersion>
     <variables>
-        <systemBackgroundColor>${systemColor}</systemBackgroundColor>
         <helpIconColor>ffffff</helpIconColor>
         <helpTextColor>ffffffbb</helpTextColor>
         <helpBackgroundColor>00000000</helpBackgroundColor>

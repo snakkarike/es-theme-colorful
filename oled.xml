@@ -3,14 +3,14 @@
   <formatVersion>7</formatVersion>
   <variables>
     <systemBackgroundColor>000000</systemBackgroundColor>
-    <helpIconColor>${systemColor}</helpIconColor>
+    <helpIconColor>ffffffbb</helpIconColor>
     <helpTextColor>ffffffbb</helpTextColor>
     <helpBackgroundColor>000000</helpBackgroundColor>
     <systemLabelColor>ffffffaa</systemLabelColor>
     <systemNameColor>ffffff</systemNameColor>
     <systemDescriptionColor>ffffff</systemDescriptionColor>
     <systemGameCountColor>ffffff99</systemGameCountColor>
-    <gamelistSelectorColor>${systemColor}</gamelistSelectorColor>
+    <gamelistSelectorColor>222222</gamelistSelectorColor>
     <gamelistPrimaryColor>ffffff77</gamelistPrimaryColor>
     <gamelistSecondaryColor>ffffff77</gamelistSecondaryColor>
     <gamelistSelectedColor>ffffff</gamelistSelectedColor>
