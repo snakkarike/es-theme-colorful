@@ -1,4 +1,13 @@
-# Colorful (Simplified) for ES-DE
+# Colorful (Simplified) for ES-DE — Anbernic RG353V Edition
+
+> **⚠️ Fork Notice**
+>
+> This is a **fork** of the original [Colorful (Simplified) for ES-DE](https://github.com/anthonycaccese/colorful-simplified-es-de) theme by [anthonycaccese](https://github.com/anthonycaccese).
+> It has been adapted to work on **640×480 resolution** and is specifically tailored for the **Anbernic RG353V** handheld device.
+>
+> If you are not using an Anbernic RG353V or a device with a 640×480 display, please refer to the original theme linked above.
+
+---
 
 This is simplified take on the Colorful theme which was originally created by [viking](https://forums.launchbox-app.com/profile/70421-viking/) & [faeran](https://forums.launchbox-app.com/profile/76940-faeran/) for Launchbox.
 
