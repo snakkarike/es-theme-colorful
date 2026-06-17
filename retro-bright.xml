@@ -3,21 +3,21 @@
   <formatVersion>7</formatVersion>
   <variables>
     <systemBackgroundColor>b2b4b2</systemBackgroundColor>
-    <helpIconColor>54585a</helpIconColor>
-    <helpTextColor>54585a</helpTextColor>
-    <helpBackgroundColor>ffffff33</helpBackgroundColor>
+    <helpIconColor>242525</helpIconColor>
+    <helpTextColor>4a4c4c</helpTextColor>
+    <helpBackgroundColor>b2b4b2</helpBackgroundColor>
     <systemLabelColor>54585a</systemLabelColor>
     <systemNameColor>000000</systemNameColor>
-    <systemDescriptionColor>000000</systemDescriptionColor>
+    <systemDescriptionColor>ffffff</systemDescriptionColor>
     <systemGameCountColor>000000aa</systemGameCountColor>
-    <gamelistSelectorColor>cacaca</gamelistSelectorColor>
-    <gamelistPrimaryColor>707372</gamelistPrimaryColor>
-    <gamelistSecondaryColor>707372</gamelistSecondaryColor>
-    <gamelistSelectedColor>000000</gamelistSelectedColor>
-    <gameDescription>000000</gameDescription>
-    <gameMetadataLabel>54585a</gameMetadataLabel>
-    <gameMetadata>333333</gameMetadata>
-    <gameMetadataBackground>./_art/assets/metadata-background-light.svg</gameMetadataBackground>
+    <gamelistSelectorColor>242525</gamelistSelectorColor>
+    <gamelistPrimaryColor>4a4c4c</gamelistPrimaryColor>
+    <gamelistSecondaryColor>4a4c4c</gamelistSecondaryColor>
+    <gamelistSelectedColor>ffffff</gamelistSelectedColor>
+    <gameDescription>ffffff</gameDescription>
+    <gameMetadataLabel>ffffff88</gameMetadataLabel>
+    <gameMetadata>ffffffaa</gameMetadata>
+    <gameMetadataBackground>./_art/assets/metadata-background-dark.svg</gameMetadataBackground>
     <batteryIndicatorColor>00000099</batteryIndicatorColor>
   </variables>
 </theme>
