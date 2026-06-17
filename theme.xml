@@ -423,7 +423,7 @@ International License. Please see README.md for full details.
             <iconSound>./_art/assets/menu-icon-sound.svg</iconSound>
             <iconNetwork>./_art/assets/menu-icon-network.svg</iconNetwork>
             <iconScraper>./_art/assets/menu-icon-scraper.svg</iconScraper>
-            <iconOptions>./_art/assets/menu-icon-advanced.svg</iconOptions>
+            <iconOptions>./_art/assets/menu-icon-options.svg</iconOptions>
             <iconAdvanced>./_art/assets/menu-icon-advanced.svg</iconAdvanced>
             <iconQuit>./_art/assets/menu-icon-quit.svg</iconQuit>
             <iconRetroachievements>./_art/assets/menu-icon-achievements.svg</iconRetroachievements>
