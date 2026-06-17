@@ -75,8 +75,8 @@ International License. Please see README.md for full details.
             <textColor>${helpTextColor}</textColor>
             <iconColor>${helpIconColor}</iconColor>
             <fontPath>${menuFontBold}</fontPath>
-            <!-- Increased from 0.0225 → 0.028 for readability on 480px screen -->
-            <fontSize>0.028</fontSize>
+            <!-- Reverted to 0.0225: 0.028 caused overflow with 4-5 items on 640px bar -->
+            <fontSize>0.0225</fontSize>
             <pos>0.025 0.975</pos>
             <origin>0 1</origin>
             <iconUpDown>./_art/assets/help-dpad-updown.svg</iconUpDown>
