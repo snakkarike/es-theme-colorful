@@ -237,7 +237,7 @@ International License. Please see README.md for full details.
             <fontPath>${fontSemiBold}</fontPath>
             <alignment>left</alignment>
             <pos>0.025 0.2</pos>
-            <size>0.319 0.75</size>
+            <size>0.319 0.72</size>
             <fontSize>0.03</fontSize>
             <!-- Reduced from 1.683 → 1.4 to show more items on 480px screen -->
             <lineSpacing>1.4</lineSpacing>
@@ -248,8 +248,7 @@ International License. Please see README.md for full details.
             <textColor>${helpTextColor}</textColor>
             <iconColor>${helpIconColor}</iconColor>
             <fontPath>${menuFontBold}</fontPath>
-            <!-- Increased from 0.0225 → 0.028 for readability on 480px screen -->
-            <fontSize>0.028</fontSize>
+            <fontSize>0.0225</fontSize>
             <pos>0.025 0.975</pos>
             <origin>0 1</origin>
             <iconUpDown>./_art/assets/help-dpad-updown.svg</iconUpDown>
