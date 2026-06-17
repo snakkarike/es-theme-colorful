@@ -51,11 +51,11 @@ International License. Please see README.md for full details.
     </subset>
 
     <!-- Color scheme includes — loaded when user selects a scheme -->
-    <include ifsubset="color-scheme:dark">./dark.xml</include>
-    <include ifsubset="color-scheme:oled">./oled.xml</include>
-    <include ifsubset="color-scheme:light">./light.xml</include>
-    <include ifsubset="color-scheme:retro-bright">./retro-bright.xml</include>
-    <include ifsubset="color-scheme:dmg">./dmg.xml</include>
+    <include subset="color-scheme" name="dark">./dark.xml</include>
+    <include subset="color-scheme" name="oled">./oled.xml</include>
+    <include subset="color-scheme" name="light">./light.xml</include>
+    <include subset="color-scheme" name="retro-bright">./retro-bright.xml</include>
+    <include subset="color-scheme" name="dmg">./dmg.xml</include>
 
     <!-- ═══════════════════════════════════════════════════════
          VARIANT SUBSET
@@ -69,10 +69,10 @@ International License. Please see README.md for full details.
     </subset>
 
     <!-- Variant includes — loaded when user selects a layout -->
-    <include ifsubset="variant:list-boxart">./variant-boxart.xml</include>
-    <include ifsubset="variant:list-screenshot">./variant-screenshot.xml</include>
-    <include ifsubset="variant:list-screenshot-marquee">./variant-screenshot-marquee.xml</include>
-    <include ifsubset="variant:list-metadata-screenshot">./variant-metadata-screenshot.xml</include>
+    <include subset="variant" name="list-boxart">./variant-boxart.xml</include>
+    <include subset="variant" name="list-screenshot">./variant-screenshot.xml</include>
+    <include subset="variant" name="list-screenshot-marquee">./variant-screenshot-marquee.xml</include>
+    <include subset="variant" name="list-metadata-screenshot">./variant-metadata-screenshot.xml</include>
 
     <variables>
         <spacerImage>./_art/assets/space.png</spacerImage>
