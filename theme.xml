@@ -31,20 +31,17 @@ International License. Please see README.md for full details.
         <gameDescription>ffffff</gameDescription>
         <gameMetadataLabel>ffffffaa</gameMetadataLabel>
         <gameMetadata>ffffff</gameMetadata>
-        <gameMetadataBackground>./_inc/images/metadata-background-dark.svg</gameMetadataBackground>
+        <!-- Fixed: was pointing to non-existent _inc/ directory -->
+        <gameMetadataBackground>./_art/assets/metadata-background-dark.svg</gameMetadataBackground>
         <batteryIndicatorColor>ffffff99</batteryIndicatorColor>
     </variables>
-
-    <subset name="font-size" displayName="Font Size">
-        <include name="medium" displayName="Medium" />
-        <include name="large" displayName="Large" />
-    </subset>
 
     <variables>
         <spacerImage>./_art/assets/space.png</spacerImage>
         <fontLight>./_art/Gilroy-Light.ttf</fontLight>
         <fontRegular>./_art/Gilroy-Regular.ttf</fontRegular>
-        <fontSemiBold>${fontSemiBold}</fontSemiBold>
+        <!-- Fixed: was self-referencing (${fontSemiBold}), now points to actual file -->
+        <fontSemiBold>./_art/Gilroy-SemiBold.ttf</fontSemiBold>
         <fontBold>./_art/Gilroy-Bold.ttf</fontBold>
         <fontHelpSystem>./_art/Akrobat-Bold.ttf</fontHelpSystem>
         <menuFontBold>./_art/Oxygen-Bold.ttf</menuFontBold>
@@ -78,7 +75,8 @@ International License. Please see README.md for full details.
             <textColor>${helpTextColor}</textColor>
             <iconColor>${helpIconColor}</iconColor>
             <fontPath>${menuFontBold}</fontPath>
-            <fontSize>0.0225</fontSize>
+            <!-- Increased from 0.0225 → 0.028 for readability on 480px screen -->
+            <fontSize>0.028</fontSize>
             <pos>0.025 0.975</pos>
             <origin>0 1</origin>
             <iconUpDown>./_art/assets/help-dpad-updown.svg</iconUpDown>
@@ -159,8 +157,9 @@ International License. Please see README.md for full details.
             <color>${systemDescriptionColor}</color>
             <lineSpacing>1.18</lineSpacing>
             <origin>0 0</origin>
-            <pos>0.025 0.7</pos>
-            <size>0.5 0.5</size>
+            <!-- Fixed: was 0.7 with size 0.5→ bled into help bar; capped at 0.85 -->
+            <pos>0.025 0.28</pos>
+            <size>0.5 0.57</size>
             <container>true</container>
             <verticalAlignment>top</verticalAlignment>
             <zIndex>5</zIndex>
@@ -201,7 +200,8 @@ International License. Please see README.md for full details.
             <pos>0.025 0.2</pos>
             <size>0.319 0.75</size>
             <fontSize>0.03</fontSize>
-            <lineSpacing>1.683</lineSpacing>
+            <!-- Reduced from 1.683 → 1.4 to show more items on 480px screen -->
+            <lineSpacing>1.4</lineSpacing>
             <horizontalMargin>0.01</horizontalMargin>
         </textlist>
 
@@ -209,7 +209,8 @@ International License. Please see README.md for full details.
             <textColor>${helpTextColor}</textColor>
             <iconColor>${helpIconColor}</iconColor>
             <fontPath>${menuFontBold}</fontPath>
-            <fontSize>0.0225</fontSize>
+            <!-- Increased from 0.0225 → 0.028 for readability on 480px screen -->
+            <fontSize>0.028</fontSize>
             <pos>0.025 0.975</pos>
             <origin>0 1</origin>
             <iconUpDown>./_art/assets/help-dpad-updown.svg</iconUpDown>
@@ -330,7 +331,8 @@ International License. Please see README.md for full details.
                 <size>0.05 0.05</size>
                 <zIndex>33</zIndex>
                 <filledPath>./_art/assets/icon-star-filled.svg</filledPath>
-                <unfilledPath>./_art/assets/iocn-star-unfilled.svg</unfilledPath>
+                <!-- Fixed: typo iocn → icon -->
+                <unfilledPath>./_art/assets/icon-star-unfilled.svg</unfilledPath>
                 <color>${gameMetadata}</color>
             </rating>
             <video name="md_video">
@@ -357,26 +359,20 @@ International License. Please see README.md for full details.
             <alignment>left</alignment>
             <verticalAlignment>center</verticalAlignment>
         </text>
+        <!-- Battery indicator: icon paths fixed (./_art/), size matches clock height,
+             duplicate tinyScreen block removed (unsupported attribute) -->
         <batteryIndicator name="batteryIndicator">
-            <!-- Positioned so icon + percentage text fits within 640px screen -->
-            <pos>0.855 0.001</pos>
-            <size>0.04 0.04</size>
-            <incharge>./art/battery/incharge.svg</incharge>
-            <full>./art/battery/full.svg</full>
-            <at75>./art/battery/75.svg</at75>
-            <at50>./art/battery/50.svg</at50>
-            <at25>./art/battery/25.svg</at25>
-            <empty>./art/battery/empty.svg</empty>
+            <pos>0.845 0.003</pos>
+            <!-- size 0.055 gives icon height ~26px, matching clock text at fontSize 0.035 -->
+            <size>0.055 0.055</size>
+            <incharge>./_art/battery/incharge.svg</incharge>
+            <full>./_art/battery/full.svg</full>
+            <at75>./_art/battery/75.svg</at75>
+            <at50>./_art/battery/50.svg</at50>
+            <at25>./_art/battery/25.svg</at25>
+            <empty>./_art/battery/empty.svg</empty>
             <color>${batteryIndicatorColor}</color>
             <fontPath>${menuFontBold}</fontPath>
-            <fontSize>0.035</fontSize>
-        </batteryIndicator>
-
-        <!-- Battery Indicator Icon x,y — tinyScreen override -->
-        <batteryIndicator name="batteryIndicator" tinyScreen="true">
-            <!-- Matching position/size with primary indicator for 640x480 screens -->
-            <pos>0.855 0.002</pos>
-            <size>0.04 0.04</size>
             <fontSize>0.035</fontSize>
         </batteryIndicator>
     </view>
