@@ -17,16 +17,16 @@ International License. Please see README.md for full details.
 <theme>
     <formatVersion>7</formatVersion>
     <variables>
-        <helpIconColor>ffffff</helpIconColor>
-        <helpTextColor>ffffffbb</helpTextColor>
-        <helpBackgroundColor>00000000</helpBackgroundColor>
+        <helpIconColor>ffffff99</helpIconColor>
+        <helpTextColor>ffffff99</helpTextColor>
+        <helpBackgroundColor>00000022</helpBackgroundColor>
         <systemLabelColor>ffffffaa</systemLabelColor>
         <systemNameColor>ffffff</systemNameColor>
         <systemDescriptionColor>ffffff</systemDescriptionColor>
-        <systemGameCountColor>ffffffbb</systemGameCountColor>
-        <gamelistSelectorColor>00000055</gamelistSelectorColor>
-        <gamelistPrimaryColor>ffffff88</gamelistPrimaryColor>
-        <gamelistSecondaryColor>ffffff88</gamelistSecondaryColor>
+        <systemGameCountColor>ffffff99</systemGameCountColor>
+        <gamelistSelectorColor>00000033</gamelistSelectorColor>
+        <gamelistPrimaryColor>ffffff66</gamelistPrimaryColor>
+        <gamelistSecondaryColor>ffffff66</gamelistSecondaryColor>
         <gamelistSelectedColor>ffffff</gamelistSelectedColor>
         <gameDescription>ffffff</gameDescription>
         <gameMetadataLabel>ffffffaa</gameMetadataLabel>

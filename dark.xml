@@ -3,20 +3,20 @@
   <formatVersion>7</formatVersion>
   <variables>
     <systemBackgroundColor>111111</systemBackgroundColor>
-    <helpIconColor>ffffff</helpIconColor>
-    <helpTextColor>ffffffbb</helpTextColor>
-    <helpBackgroundColor>111111</helpBackgroundColor>
+    <helpIconColor>ffffffbb</helpIconColor>
+    <helpTextColor>ffffffcc</helpTextColor>
+    <helpBackgroundColor>000000</helpBackgroundColor>
     <systemLabelColor>ffffffaa</systemLabelColor>
     <systemNameColor>ffffff</systemNameColor>
     <systemDescriptionColor>ffffff</systemDescriptionColor>
     <systemGameCountColor>ffffff99</systemGameCountColor>
-    <gamelistSelectorColor>ffffff</gamelistSelectorColor>
-    <gamelistPrimaryColor>ffffff77</gamelistPrimaryColor>
-    <gamelistSecondaryColor>ffffff77</gamelistSecondaryColor>
-    <gamelistSelectedColor>000000</gamelistSelectedColor>
+    <gamelistSelectorColor>000000</gamelistSelectorColor>
+    <gamelistPrimaryColor>ffffff55</gamelistPrimaryColor>
+    <gamelistSecondaryColor>ffffff55</gamelistSecondaryColor>
+    <gamelistSelectedColor>ffffff</gamelistSelectedColor>
     <gameDescription>ffffff</gameDescription>
-    <gameMetadataLabel>ffffff55</gameMetadataLabel>
-    <gameMetadata>ffffffaa</gameMetadata>
+    <gameMetadataLabel>ffffffaa</gameMetadataLabel>
+    <gameMetadata>ffffff</gameMetadata>
     <gameMetadataBackground>./_art/assets/metadata-background-dark.svg</gameMetadataBackground>
     <batteryIndicatorColor>ffffff99</batteryIndicatorColor>
   </variables>

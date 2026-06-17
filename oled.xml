@@ -4,15 +4,15 @@
   <variables>
     <systemBackgroundColor>000000</systemBackgroundColor>
     <helpIconColor>ffffffbb</helpIconColor>
-    <helpTextColor>ffffffbb</helpTextColor>
-    <helpBackgroundColor>000000</helpBackgroundColor>
+    <helpTextColor>ffffffcc</helpTextColor>
+    <helpBackgroundColor>090909</helpBackgroundColor>
     <systemLabelColor>ffffffaa</systemLabelColor>
     <systemNameColor>ffffff</systemNameColor>
     <systemDescriptionColor>ffffff</systemDescriptionColor>
     <systemGameCountColor>ffffff99</systemGameCountColor>
     <gamelistSelectorColor>222222</gamelistSelectorColor>
-    <gamelistPrimaryColor>ffffff77</gamelistPrimaryColor>
-    <gamelistSecondaryColor>ffffff77</gamelistSecondaryColor>
+    <gamelistPrimaryColor>ffffff55</gamelistPrimaryColor>
+    <gamelistSecondaryColor>ffffff55</gamelistSecondaryColor>
     <gamelistSelectedColor>ffffff</gamelistSelectedColor>
     <gameDescription>ffffff</gameDescription>
     <gameMetadataLabel>ffffffaa</gameMetadataLabel>
