@@ -491,7 +491,7 @@ International License. Please see README.md for full details.
         </gridtile>
         <gridtile name="selected">
             <padding>4 4</padding>
-            <backgroundColor>${gamelistSelectedColor}44</backgroundColor>
+            <backgroundPath>./_art/assets/grid-border.svg</backgroundPath>
         </gridtile>
         <text name="gridtile.name">
             <color>${gamelistPrimaryColor}</color>
