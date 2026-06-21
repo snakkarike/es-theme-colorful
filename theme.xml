@@ -140,6 +140,9 @@ International License. Please see README.md for full details.
             <origin>1 0</origin>
             <pos>1 0.125</pos>
             <size>0 0.75</size>
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="400" mode="easeOut" />
+            </storyboard>
         </image>
 
         <carousel name="systemcarousel">
@@ -162,6 +165,9 @@ International License. Please see README.md for full details.
             <pos>0.025 0.125</pos>
             <size>0 0</size>
             <color>${systemNameColor}</color>
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="400" mode="easeOut" />
+            </storyboard>
         </text>
 
         <text name="shortdescription" extra="true">
@@ -173,6 +179,9 @@ International License. Please see README.md for full details.
             <origin>0 0</origin>
             <pos>0.025 0.1</pos>
             <size>0.5 0.025</size>
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="400" mode="easeOut" />
+            </storyboard>
         </text>
 
         <text name="systemInfo">
@@ -185,6 +194,9 @@ International License. Please see README.md for full details.
             <pos>0.025 0.220</pos>
             <size>0.400 0.045</size>
             <fontSize>0.04</fontSize>
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="400" mode="easeOut" />
+            </storyboard>
         </text>
 
         <text name="longdescription" extra="true">
@@ -202,6 +214,9 @@ International License. Please see README.md for full details.
             <verticalAlignment>top</verticalAlignment>
             <zIndex>5</zIndex>
             <autoScroll>vertical</autoScroll>
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="400" mode="easeOut" />
+            </storyboard>
         </text>
 
     </view>
@@ -241,6 +256,9 @@ International License. Please see README.md for full details.
             <!-- Reduced from 1.683 → 1.4 to show more items on 480px screen -->
             <lineSpacing>1.4</lineSpacing>
             <horizontalMargin>0.01</horizontalMargin>
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="400" mode="easeOut" />
+            </storyboard>
         </textlist>
 
         <helpsystem name="help">
@@ -286,6 +304,9 @@ International License. Please see README.md for full details.
             <verticalAlignment>top</verticalAlignment>
             <zIndex>5</zIndex>
             <autoScroll>vertical</autoScroll>
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="400" mode="easeOut" />
+            </storyboard>
         </text>
 
         <!-- Define metadata -->
@@ -308,23 +329,28 @@ International License. Please see README.md for full details.
         <!-- Hidden Elements -->
 
         <text name="shortdescription, longdescription" extra="true">
-            <origin>1 1</origin>
-            <pos>0 0</pos>
-            <color>${gameMetadata}</color>
+            <pos>1 1</pos>
+            <size>0 0</size>
+            <color>00000000</color>
         </text>
 
         <text
-            name="md_lbl_releasedate, md_lbl_developer, md_developer, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_publisher, md_publsher">
-            <origin>1 1</origin>
-            <color>${gameMetadata}</color>
-            <pos>0 0</pos>
+            name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_developer, md_lbl_publisher, md_publisher, md_lbl_genre, md_genre, md_lbl_players, md_players, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_publsher">
+            <color>00000000</color>
+            <pos>1 1</pos>
+            <size>0 0</size>
         </text>
 
         <datetime name="md_releasedate, md_lastplayed">
-            <origin>1 1</origin>
-            <color>${gameMetadata}</color>
-            <pos>0 0</pos>
+            <color>00000000</color>
+            <pos>1 1</pos>
+            <size>0 0</size>
         </datetime>
+        
+        <rating name="md_rating">
+            <pos>1 1</pos>
+            <size>0 0</size>
+        </rating>
 
     </view>
 
@@ -335,12 +361,18 @@ International License. Please see README.md for full details.
             <pos>0.4 0.125</pos>
             <maxSize>0.55 0.5</maxSize>
             <zIndex>32</zIndex>
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="400" mode="easeOut" />
+            </storyboard>
         </image>
         <image name="md_marquee">
             <origin>0 0</origin>
             <pos>0.75 0.095</pos>
             <maxSize>0.2 0.2</maxSize>
             <zIndex>32</zIndex>
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="400" mode="easeOut" />
+            </storyboard>
         </image>
         <text name="logoText">
             <color>00000000</color>
@@ -380,12 +412,79 @@ International License. Please see README.md for full details.
                 <delay>1.4</delay>
                 <showSnapshotNoVideo>true</showSnapshotNoVideo>
                 <showSnapshotDelay>true</showSnapshotDelay>
+                <storyboard event="activate">
+                    <animation property="opacity" from="0" to="1" duration="400" mode="easeOut" />
+                </storyboard>
             </video>
             <text name="logoText">
                 <color>00000000</color>
             </text>
         </view>
     </feature>
+
+    <view name="grid">
+        <image name="background" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>${spacerImage}</path>
+            <tile>true</tile>
+            <color>${systemBackgroundColor}</color>
+            <zIndex>0</zIndex>
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="400" mode="easeOut" />
+            </storyboard>
+        </image>
+        <image name="backgroundhelp" extra="true">
+            <origin>0 1</origin>
+            <pos>0 1</pos>
+            <size>1 0.075</size>
+            <path>${spacerImage}</path>
+            <tile>true</tile>
+            <color>${helpBackgroundColor}</color>
+            <zIndex>0</zIndex>
+        </image>
+        <helpsystem name="help">
+            <textColor>${helpTextColor}</textColor>
+            <iconColor>${helpIconColor}</iconColor>
+            <fontPath>${menuFontBold}</fontPath>
+            <fontSize>0.0225</fontSize>
+            <pos>0.025 0.975</pos>
+            <origin>0 1</origin>
+            <iconUpDown>./_art/assets/help-dpad-updown.svg</iconUpDown>
+            <iconLeftRight>./_art/assets/help-dpad-leftright.svg</iconLeftRight>
+            <iconUpDownLeftRight>./_art/assets/help-dpad-updownleftright.svg</iconUpDownLeftRight>
+            <iconA>./_art/assets/help-button-east.svg</iconA>
+            <iconB>./_art/assets/help-button-south.svg</iconB>
+            <iconX>./_art/assets/help-button-north.svg</iconX>
+            <iconY>./_art/assets/help-button-west.svg</iconY>
+        </helpsystem>
+        <imagegrid name="gamegrid">
+            <pos>0.025 0.15</pos>
+            <size>0.95 0.75</size>
+            <padding>0.02 0.02</padding>
+            <margin>0.015 0.015</margin>
+            <autoLayout>4 3</autoLayout>
+            <autoLayoutSelectedZoom>1.10</autoLayoutSelectedZoom>
+            <animate>true</animate>
+            <scrollDirection>vertical</scrollDirection>
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="400" mode="easeOut" />
+            </storyboard>
+        </imagegrid>
+        <gridtile name="default">
+            <padding>4 4</padding>
+            <backgroundColor>00000033</backgroundColor>
+        </gridtile>
+        <gridtile name="selected">
+            <padding>4 4</padding>
+            <backgroundColor>${gamelistSelectedColor}44</backgroundColor>
+        </gridtile>
+        <text name="gridtile.name">
+            <color>${gamelistPrimaryColor}</color>
+            <fontSize>0.035</fontSize>
+        </text>
+    </view>
 
     <view name="screen">
         <text name="clock">
