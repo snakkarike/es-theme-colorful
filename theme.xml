@@ -459,9 +459,22 @@ International License. Please see README.md for full details.
             <iconX>./_art/assets/help-button-north.svg</iconX>
             <iconY>./_art/assets/help-button-west.svg</iconY>
         </helpsystem>
+        <text name="nameLabel" extra="true">
+            <fontPath>${fontBold}</fontPath>
+            <forceUppercase>1</forceUppercase>
+            <color>${gameMetadataLabel}</color>
+            <fontSize>0.04</fontSize>
+            <alignment>left</alignment>
+            <pos>0.025 0.1</pos>
+            <size>0.95 0.08</size>
+            <zIndex>32</zIndex>
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="400" mode="easeOut" />
+            </storyboard>
+        </text>
         <imagegrid name="gamegrid">
-            <pos>0.025 0.15</pos>
-            <size>0.95 0.75</size>
+            <pos>0.025 0.19</pos>
+            <size>0.95 0.71</size>
             <padding>0.02 0.02</padding>
             <margin>0.015 0.015</margin>
             <autoLayout>4 3</autoLayout>
@@ -483,6 +496,7 @@ International License. Please see README.md for full details.
         <text name="gridtile.name">
             <color>${gamelistPrimaryColor}</color>
             <fontSize>0.035</fontSize>
+            <singleLineScroll>true</singleLineScroll>
         </text>
     </view>
 

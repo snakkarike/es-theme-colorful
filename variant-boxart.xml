@@ -2,17 +2,27 @@
 <!-- Variant: List with Boxart -->
 <theme>
   <formatVersion>7</formatVersion>
-  <view name="basic, detailed">
+  <view name="basic, detailed, video">
+    <!-- Force the default screenshot to completely disappear -->
     <image name="md_image">
+      <pos>1 1</pos>
+      <size>0 0</size>
+      <color>00000000</color>
+    </image>
+    <!-- Show the boxart -->
+    <image name="md_thumbnail">
       <origin>0 0</origin>
       <pos>0.4 0.125</pos>
       <maxSize>0.55 0.5</maxSize>
       <zIndex>32</zIndex>
     </image>
+  </view>
+  <view name="basic, detailed">
     <image name="md_marquee">
       <origin>1 0</origin>
       <pos>1 1</pos>
       <maxSize>0.01 0.01</maxSize>
+      <color>00000000</color>
     </image>
   </view>
   <view name="video">
@@ -20,11 +30,15 @@
       <origin>0 0</origin>
       <pos>0.4 0.125</pos>
       <maxSize>0.55 0.5</maxSize>
+      <zIndex>33</zIndex>
+      <showSnapshotNoVideo>false</showSnapshotNoVideo>
+      <showSnapshotDelay>false</showSnapshotDelay>
     </video>
     <image name="md_marquee">
       <origin>1 0</origin>
       <pos>1 1</pos>
       <maxSize>0.01 0.01</maxSize>
+      <color>00000000</color>
     </image>
   </view>
 </theme>
